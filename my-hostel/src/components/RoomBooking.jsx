@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
-import { FaDoorOpen, FaUsers, FaBuilding, FaCheckCircle, FaTimesCircle, FaUserTie, FaPhone } from 'react-icons/fa';
+import { FaDoorOpen, FaBuilding, FaCheckCircle, FaTimesCircle, FaUserTie, FaPhone } from 'react-icons/fa';
 import axios from 'axios';
 
 const RoomBooking = () => {

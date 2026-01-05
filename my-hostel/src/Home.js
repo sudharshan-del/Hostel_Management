@@ -1,7 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-
+  const navigate = useNavigate();
   const role = localStorage.getItem("role");
   const username = localStorage.getItem("username");
   const rollNo = localStorage.getItem("rollNo");
@@ -51,7 +52,8 @@ export default function Home() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+          <div onClick={() => navigate("/room-info")} 
+          className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
             <h2 className="text-xl font-semibold mb-2">Hostel Room Information Service</h2>
             <p className="text-gray-600">
               JAVA RMI
