@@ -15,13 +15,13 @@ export default function Home() {
           <h1 className="text-4xl font-bold">
             Welcome {username}
           </h1>
-      
+
           {role === "student" && (
             <p className="mt-3 text-lg text-blue-100">
               Roll Number: <span className="font-semibold">{rollNo}</span>
             </p>
           )}
-    
+
           {role === "admin" && (
             <p className="mt-3 text-lg text-blue-100">
               Admin Dashboard
@@ -44,27 +44,44 @@ export default function Home() {
           
           {/* Card 1 */}
           <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
-            <h2 className="text-xl font-semibold mb-2">🏠 Room Availability</h2>
+            <h2 className="text-xl font-semibold mb-2">Hostel Complaint Management System</h2>
             <p className="text-gray-600">
-              View available rooms and capacity in real time.
+              Socket Programming
             </p>
           </div>
 
           {/* Card 2 */}
           <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
-            <h2 className="text-xl font-semibold mb-2">📅 Easy Booking</h2>
+            <h2 className="text-xl font-semibold mb-2">Hostel Room Information Service</h2>
             <p className="text-gray-600">
-              Simple and fast hostel room booking process.
+              JAVA RMI
             </p>
           </div>
 
           {/* Card 3 */}
           <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
-            <h2 className="text-xl font-semibold mb-2">🛠 Admin Control</h2>
+            <h2 className="text-xl font-semibold mb-2">Hostel Notice Board System</h2>
             <p className="text-gray-600">
-              Admins can manage rooms, students, and bookings.
+              RPC (REST API)
             </p>
           </div>
+
+          {/* Card 4 */}
+          <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+            <h2 className="text-xl font-semibold mb-2">Student Resource Sharing System</h2>
+            <p className="text-gray-600">
+              Peer - to - Peer (P2P)
+            </p>
+          </div>
+
+          {/* Card 5 */}
+          <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition">
+            <h2 className="text-xl font-semibold mb-2">Mess Feedback Live Counter</h2>
+            <p className="text-gray-600">
+              Shared Memory
+            </p>
+          </div>
+
         </div>
 
         {/* Call to Action */}
