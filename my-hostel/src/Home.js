@@ -1,11 +1,33 @@
 import React from "react";
 
 export default function Home() {
+
+  const role = localStorage.getItem("role");
+  const username = localStorage.getItem("username");
+  const rollNo = localStorage.getItem("rollNo");
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       
       {/* Header */}
       <header className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white shadow-lg">
+        <div className="container mx-auto px-6 py-10 text-center">
+          <h1 className="text-4xl font-bold">
+            Welcome {username}
+          </h1>
+      
+          {role === "student" && (
+            <p className="mt-3 text-lg text-blue-100">
+              Roll Number: <span className="font-semibold">{rollNo}</span>
+            </p>
+          )}
+    
+          {role === "admin" && (
+            <p className="mt-3 text-lg text-blue-100">
+              Admin Dashboard
+            </p>
+          )}
+        </div>
         <div className="container mx-auto px-6 py-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold">
             Hostel Management System

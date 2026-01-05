@@ -23,11 +23,14 @@ export default function Login() {
       return;
     }
 
-    navigate("/home");
+    
 
     if (role === "admin") {
       if(ADMIN_LIST.includes(username)){
         alert(`Admin ${username} logged in`);
+        localStorage.setItem("role","admin");
+        localStorage.setItem("username",username);
+        navigate("/home");
       }
       else alert("Unauthorized admin user");
     } else {
@@ -40,6 +43,10 @@ export default function Login() {
         return;
       }
       alert(`Student logged in successfully!\nName: ${username}\nRoll No: ${rollNo}`);
+      localStorage.setItem("role","student");
+      localStorage.setItem("username",username);
+      localStorage.setItem("rollNo",rollNo);
+      navigate("/home");
     }
   };
 
