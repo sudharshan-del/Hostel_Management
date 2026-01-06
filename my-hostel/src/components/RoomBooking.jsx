@@ -48,7 +48,7 @@ const RoomBooking = () => {
         preferredRoomNumber: formData.preferredRoomNumber.trim()
       };
 
-      const response = await axios.post('/api/bookings', payload);
+      const response = await axios.post(`http://localhost:8080/api/bookings`, payload);
       setBookingResult(response.data);
       
       if (response.data.success) {

@@ -17,7 +17,7 @@ const RoomSearch = () => {
 
     setLoading(true);
     try {
-      const response = await axios.get(`/api/rooms/${roomNumber}`);
+      const response = await axios.get(`http://localhost:8080/api/rooms/${roomNumber}`);
       setRoomData(response.data);
       toast.success('Room found!');
     } catch (error) {
